@@ -1,5 +1,5 @@
 """
-Starts the imcon application.
+Starts the azcam-app application.
 """
 
 import sys
@@ -12,12 +12,12 @@ from imcon.ipython_config import ipython_config
 
 def main():
     """
-    Starts imcon.
-    Usage examples: imcon full_path_to_config_file -- <options>
-                    python -m imcon full_path_to_config_file -- <options>
+    Starts azcam-app.
+    Usage examples: azcamapp full_path_to_config_file -- <options>
+                    python -m azcam-app full_path_to_config_file -- <options>
     """
 
-    print("Welcome to imcon!")
+    print("Welcome to azcamapp!")
 
     # configure IPython
     c = ipython_config()
@@ -41,8 +41,8 @@ def main():
         config_command = f"from {config_file} import *"
         c.InteractiveShellApp.exec_lines.append(config_command)
 
-        # optimize for imcon instead of azcam
-        _cmd = f"from imcon.optimize import *"
+        # optimize for azcam-app
+        _cmd = f"from azcam_app.optimize import *"
         c.InteractiveShellApp.exec_lines.append(_cmd)
 
     # start IPython in interactive mode

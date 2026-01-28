@@ -1,6 +1,6 @@
 """
-Optimize azcam built-ins for imcon.
-Everything here is imported to the imcon CLI.
+Optimize azcam built-ins for azcam-app.
+Everything here is imported to the azcam-app CLI.
 """
 
 import azcam

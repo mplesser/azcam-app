@@ -1,5 +1,5 @@
 """
-Configure IPython for imcon, do not relie on profile.
+Configure IPython for azcam-app, do not rely on profile.
 """
 
 import os
