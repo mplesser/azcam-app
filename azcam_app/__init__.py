@@ -4,7 +4,7 @@ used for scientific observations."""
 
 from importlib import metadata
 
-from azcam_app.database import AzcamDatabase
+from azcam.database import AzcamDatabase
 
 __version__ = metadata.version(__package__)
 __version_info__ = tuple(int(i) for i in __version__.split(".") if i.isdigit())

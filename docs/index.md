@@ -1,14 +1,14 @@
 # Home
 
-*imcon* is an application used to control scientific imaging systems. It is based on the *azcam* image acquisition and analysis package.
+*azcamapp* is an application used to control scientific imaging systems. It is based on the *azcam* image acquisition and analysis package.
 
 ## Installation
 
-### imcon
+### azcam-app
 
-`pip install imcon`
+`pip install azcam-app`
 
-The latest version of the imcon package is located on GitHub at <https://github.com/mplesser/imcon.git>
+The latest version of the azcam-app package is located on GitHub at <https://github.com/mplesser/azcam-app.git>
 
 ## AzCam
 
@@ -16,20 +16,20 @@ See the [azcam documentation](https://azcam.readthedocs.io) for all things azcam
 
 ## Usage
 
-A configuration file is required to configure imcon at start up. It is specified with a full pathname and does not need to be in an installed python package. Startup examples are:
+A configuration file is required to configure azcamapp at start up. It is specified with a full pathname and does not need to be in an installed python package. Startup examples are:
 
 ```python
-imcon <full_path_to_config_file> -- <options>
+azcamapp <full_path_to_config_file> -- <options>
 or
-python -m <full_path_to_config_file> -- <options>
+python -m azcam_app <full_path_to_config_file> -- <options>
 ```
 
 Example:
 ```python
-imcon /data/90prime/code/pf_config.py -- -normal
+azcamapp /data/90prime/code/pf_config.py -- -normal
 ```
 
-After initiialization imcon provides an embedded IPython shell which is used for all local operations. The *tools* object is exposed to provide access to all azcam tools.
+After initiialization azcamapp provides an embedded IPython shell which is used for all local operations. The *tools* object is exposed to provide access to all azcam tools.
 
 ## Examples
 

@@ -7,7 +7,7 @@ import os
 
 import IPython
 
-from imcon.ipython_config import ipython_config
+from azcam_app.ipython_config import ipython_config
 
 
 def main():

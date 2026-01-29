@@ -10,13 +10,13 @@ from IPython.terminal.prompts import Prompts, Token
 
 def ipython_config():
     """
-    Configure IPython for imcon
+    Configure IPython for azcam-app
     """
 
     c = Config()
 
     c.InteractiveShellApp.exec_lines = [
-        "from imcon.ipython_config import MyPrompts",
+        "from azcam_app.ipython_config import MyPrompts",
         "ip=get_ipython()",
         "ip.prompts=MyPrompts(ip)",
         "del MyPrompts, ip",
